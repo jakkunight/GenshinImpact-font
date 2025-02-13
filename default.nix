@@ -7,7 +7,7 @@
   installPhase = ''
     mkdir -p $out
     cp -r $src/* $out
-    nerd-font-patcher --name "Genshin-Impact" $out/*.ttf -out $out
+    nerd-font-patcher -c --name "Genshin-Impact" $out/*.ttf -out $out
     rm $out/"HYWenHei Extended.ttf"
   '';
 }
